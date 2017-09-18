@@ -1,8 +1,38 @@
 <!--The content below is only a placeholder and can be replaced.-->
 {{questionInfo | json}} <-----question info
-the question is: {{questionInfo.question}}
-<!-- <app-gui [question]='questionInfo?.question'></app-gui> -->
-<app-gui [question]='questionInfo'></app-gui>
+the question is: {{questionInfo?.question}}
+<!-- <app-gui [question]="questionInfo?.question"></app-gui> -->
+<!-- <app-gui [questionInfo]="questionInfo"></app-gui> -->
+
+
+<div class="row">
+  <div class="col-sm-2 col-sm-offset-5 text-center">
+    <div id="container">
+      <div class="text-left">
+        <b>Question:</b> <span id="question"></span>  {{questionInfo?.question}}
+      </div>
+      <div class="text-left">
+        <b>Category:</b> <span id="category"></span> {{questionInfo?.category.title}}
+      </div>
+      <div class="text-left">
+        <b>Value:</b> <span id="questionvalue"></span> {{questionInfo?.value}}
+      </div>
+      <div class="form-group text-left">
+        <label for="answer">Answer:</label> <span id="answerapivalue"></span> {{questionInfo?.answer}}
+        <input type="text" class="form-control" id="answer">
+      </div>
+      <div class="buttonWrapper text-left">
+        <button type="button" class="btn btn-primary btn-lg guessbtn">Guess</button>
+        <button type="button" class="btn btn-secondary btn-lg submitbtn">Submit Answer</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="scoreWrapper text-center">
+<b>Score:</b> <span id="score">0</span>
+</div>
+
 
 
 
