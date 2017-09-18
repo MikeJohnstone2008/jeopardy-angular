@@ -7,9 +7,8 @@ import { JeopardyService } from './jeopardy.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'app';
 
-questionInfo;
+  questionInfo;
 
   constructor(private jeopardyService: JeopardyService){}
 
@@ -24,9 +23,4 @@ questionInfo;
   ngOnInit(){
     this.getDataFromService()
   }
-// Greatings(){
-//   return "Hi Mike";
- 
-// }
-// console.log(Greatings())
 }
