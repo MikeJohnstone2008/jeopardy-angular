@@ -5,9 +5,11 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { JeopardyService } from './jeopardy.service';
 
+
 @NgModule({
   declarations: [
     AppComponent
+
   ],
   imports: [
     BrowserModule,
