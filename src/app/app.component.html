@@ -17,21 +17,13 @@ the question is: {{questionInfo?.question}}
       <div class="text-left">
         <b>Value:</b> <span id="questionvalue"></span> {{questionInfo?.value}}
       </div>
-      <div class="form-group text-left">
-        <label for="answer">Answer:</label> <span id="answerapivalue"></span> {{questionInfo?.answer}}
-        <input type="text" class="form-control" id="answer">
-      </div>
-      <div class="buttonWrapper text-left">
-        <button type="button" class="btn btn-primary btn-lg guessbtn">Guess</button>
-        <button type="button" class="btn btn-secondary btn-lg submitbtn">Submit Answer</button>
-      </div>
-
+      
+{{answer}}
     </div>
   </div>
 </div>
-<div class="scoreWrapper text-center">
-<b>Score:</b> <span id="score">0</span>
-</div>
+<hr>
+<app-input-and-button (nextQuestion)="getDataFromService()" [questionInfo]="questionInfo"></app-input-and-button>
 
 
 

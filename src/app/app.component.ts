@@ -7,12 +7,9 @@ import { JeopardyService } from './jeopardy.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  // question: string;
-  // catogory: string;
-  // value: number;
-  // answer: string;
-
+answer: string;
 questionInfo;
+score: number = 0;
 
   constructor(private jeopardyService: JeopardyService){}
 
@@ -27,9 +24,24 @@ questionInfo;
   ngOnInit(){
     this.getDataFromService()
   }
-// Greatings(){
-//   return "Hi Mike";
- 
+//  compareAnswer(){
+
+//  }
+ onClickMe(){
+//   function myFunction() {
+//     var x = document.getElementById('myDIV');
+//     if (x.style.display === 'none') {
+//         x.style.display = 'block';
+//     } else {
+//         x.style.display = 'none';
+//     }
 // }
-// console.log(Greatings())
+
+   if(this.answer ==this.questionInfo.answer){
+     console.log(this.answer)
+   this.score = this.score + this.questionInfo.value;
+   }  
+ }
 }
+
+

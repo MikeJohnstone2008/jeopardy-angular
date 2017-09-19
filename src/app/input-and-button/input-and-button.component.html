@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-sm-2 col-sm-offset-5 text-center">
+      <div id="container">
+        
+        <div class="form-group text-left">
+          <label for="answer">Answer:</label> <span id="answerapivalue"></span> {{questionInfo?.answer}}
+          <input type="text" class="form-control" id="answer" [(ngModel)]="answer"> 
+        </div>
+        <div class="buttonWrapper text-left">
+          <button type="button" class="btn btn-primary btn-lg guessbtn" (click)="getQuestion()">Next Question</button>
+          <button type="button" class="btn btn-secondary btn-lg submitbtn" (click)="submitAnswer()">Submit Answer</button>
+        </div>
+  {{answer}}
+      </div>
+    </div>
+  </div>
+  <div class="scoreWrapper text-center">
+  <b>Score:</b> <span id="score">{{score}}</span>
+  </div>
