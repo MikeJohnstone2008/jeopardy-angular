@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { JeopardyService } from './jeopardy.service';
 import { InputAndButtonComponent } from './input-and-button/input-and-button.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

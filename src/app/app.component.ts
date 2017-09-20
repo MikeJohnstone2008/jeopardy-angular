@@ -7,6 +7,10 @@ import { JeopardyService } from './jeopardy.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
+  // question: string;
+  // catogory: string;
+  // value: number;
+  // answer: string;
 
   questionInfo;
   selectedClick;
@@ -25,4 +29,9 @@ export class AppComponent implements OnInit{
   ngOnInit(){
     this.getDataFromService()
   }
+// Greatings(){
+//   return "Hi Mike";
+ 
+// }
+// console.log(Greatings())
 }
