@@ -9,6 +9,7 @@ import { JeopardyService } from './jeopardy.service';
 export class AppComponent implements OnInit{
 
   questionInfo;
+  selectedClick;
 
   constructor(private jeopardyService: JeopardyService){}
 
@@ -20,6 +21,7 @@ export class AppComponent implements OnInit{
         }
       )
   }
+
   ngOnInit(){
     this.getDataFromService()
   }

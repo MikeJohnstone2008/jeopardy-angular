@@ -1,0 +1,18 @@
+<hr>
+<div class="row">
+  <div class="col-sm-2 col-sm-offset-5 text-center">
+    <div id="container">
+      <div class="form-group text-left">
+        <input type="text" class="form-control" [(ngModel)]="myAnswer" id="answer">
+      </div>
+      <div class="buttonWrapper text-left">
+        <!-- Button to call clickedThing method and emit to root component -->
+        <button type="button" class="btn btn-primary btn-lg nextquestionbtn" (click)="clickedThing()">Next Question</button>
+        <button type="button" class="btn btn-secondary btn-lg submitbtn" (click)="submitAnswer()">Submit Answer</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="scoreWrapper text-center">
+<b>Score:</b> <span [(ngModel)]="myScore" ngDefaultControl>{{myScore}}</span>
+</div>
