@@ -12,7 +12,8 @@ export class AppComponent implements OnInit{
   // value: number;
   // answer: string;
 
-questionInfo;
+  questionInfo;
+  selectedClick;
 
   constructor(private jeopardyService: JeopardyService){}
 
@@ -24,6 +25,7 @@ questionInfo;
         }
       )
   }
+
   ngOnInit(){
     this.getDataFromService()
   }
