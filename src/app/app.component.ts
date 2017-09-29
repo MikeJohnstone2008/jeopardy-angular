@@ -7,9 +7,13 @@ import { JeopardyService } from './jeopardy.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-// answer: string;
-questionInfo;
-// score: number = 0;
+  // question: string;
+  // catogory: string;
+  // value: number;
+  // answer: string;
+
+  questionInfo;
+  selectedClick;
 
   constructor(private jeopardyService: JeopardyService){}
 
@@ -21,6 +25,7 @@ questionInfo;
         }
       )
   }
+
   ngOnInit(){
     this.getDataFromService()
   }

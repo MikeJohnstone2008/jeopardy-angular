@@ -1,10 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 {{questionInfo | json}} <-----question info
-the question is: {{questionInfo?.question}}
-<!-- <app-gui [question]="questionInfo?.question"></app-gui> -->
-<!-- <app-gui [questionInfo]="questionInfo"></app-gui> -->
-
-
+<hr>
 <div class="row">
   <div class="col-sm-2 col-sm-offset-5 text-center">
     <div id="container">
@@ -12,7 +8,7 @@ the question is: {{questionInfo?.question}}
         <b>Question:</b> <span id="question"></span>  {{questionInfo?.question}}
       </div>
       <div class="text-left">
-        <b>Category:</b> <span id="category"></span> {{questionInfo?.category.title}}
+        <b>Category:</b> <span id="category"></span> {{questionInfo?.category?.title}}
       </div>
       <div class="text-left">
         <b>Value:</b> <span id="questionvalue"></span> {{questionInfo?.value}}
