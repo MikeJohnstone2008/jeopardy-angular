@@ -6,12 +6,14 @@ import { FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { JeopardyService } from './jeopardy.service';
 import { InputAndButtonComponent } from './input-and-button/input-and-button.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    InputAndButtonComponent
+    InputAndButtonComponent,
+    SearchComponent
 
   ],
   imports: [
